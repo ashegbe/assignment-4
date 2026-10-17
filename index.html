@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+  Name: Ashley Egbe
+  Date: 10-16-2026
+  CSC 372-01
+
+  This is the index.html page for Assignment 4. It provides a search form and an empty
+  gallery that script.js fills with TVMaze show cards, and it includes the required TVMaze
+  attribution links.
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TMaze Show Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>TMaze Show Gallery</h1>
+        <p>Search for a show by title or keyword.</p>
+        <form id="search-form">
+            <label for="query">Show title or keyword</label>
+            <input type="search" id="query" name="query" placeholder="Try &ldquo;mystery&rdquo; or &ldquo;office&rdquo;"
+                autocomplete="off">
+            <button type="submit">Search</button>
+        </form>
+    </header>
+
+    <main>
+        <div id="status" role="status" aria-live="polite"></div>
+        <section id="gallery" aria-label="Search results"></section>
+    </main>
+
+    <footer>
+        Data provided by <a href="https://www.tvmaze.com/" target="_blank" rel="noopener">TVmaze</a>,
+        licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA
+            4.0</a>.
+        See the <a href="https://www.tvmaze.com/api#licensing" target="_blank" rel="noopener">TVmaze licensing
+            terms</a>.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
